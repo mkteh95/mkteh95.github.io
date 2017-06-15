@@ -71,7 +71,7 @@ $(document).ready(function() {
         
         if ($('#contact form .form-group.has-error').length === 0) {
             var form = $('#contact form')[0]
-            console.log(form)
+
             $.ajax({
                 url: 'https://formspree.io/mkteh95@hotmail.com',
                 method: 'POST',
