@@ -70,15 +70,16 @@ $(document).ready(function() {
         });
         
         if ($('#contact form .form-group.has-error').length === 0) {
-            var form = $('#contact form')
+            var form = $('#contact form')[0]
+            console.log(form)
             $.ajax({
                 url: 'https://formspree.io/mkteh95@hotmail.com',
                 method: 'POST',
                 data: {
-                  name: form.name,
-                  _replyto: form._replyto,
-                  message: form.message,
-                  _subject: form._subject
+                  name: form.name.value,
+                  _replyto: form._replyto.value,
+                  message: form.message.value,
+                  _subject: form._subject.value
                 },
                 dataType: 'json',
                 success: function() {
