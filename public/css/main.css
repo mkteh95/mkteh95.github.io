@@ -61,6 +61,18 @@
   .full-modal .container {
     padding: 0 15px; }
 
+.carousel .carousel-control {
+  background: inherit;
+  color: grey; }
+  .carousel .carousel-control .glyphicon {
+    top: calc(50% - 37.5px); }
+.carousel .carousel-indicators li {
+  border-color: grey; }
+  .carousel .carousel-indicators li.active {
+    background: grey; }
+.carousel .carousel-inner .item img {
+  padding: 0 15% 75px 15%; }
+
 .typing-text {
   display: inline-block;
   width: 0.8em;
