@@ -11,7 +11,7 @@ $(document).ready(function() {
         e.preventDefault();
         $('#header').height()
         $('html, body').animate({
-            scrollTop: $(this.hash).offset().top - offset
+            scrollTop: $(this.hash).offset().top - offset + 1
         }, 300);
     });
     
